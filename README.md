@@ -1,7 +1,9 @@
-##Demo Pics:
+## <a href="http://react-ecommerce-store-wasi.surge.sh/">Live Demo</a>
+
+## Pics:
 </br>
-<a href="#"><img src="https://i.ibb.co/hVD5jPV/2021-03-09-23.png" alt="2021-03-09-23" border="0"></a>
-<a href="#"><img src="https://i.ibb.co/Brf0rLB/2021-03-09-24.png" alt="2021-03-09-24" border="0"></a>
+<a href="#"><img src="https://i.ibb.co/F7wqdMM/2021-03-09-23.png" alt="2021-03-09-23" border="0"></a>
+<a href="https://ibb.co/3kQ3JfH"><img src="https://i.ibb.co/qxVSZ0w/2021-03-09-24.png" alt="2021-03-09-24" border="0"></a>
 
 
 In the project directory, you can run:
