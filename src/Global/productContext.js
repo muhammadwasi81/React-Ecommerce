@@ -1,35 +1,81 @@
-import React, {createContext, useReducer} from "react"
-import {ProductReducer} from "./productReducer"
-import iphone from "../assets/iphone.jpg";
-import headphones from "../assets/headphones.jpg"
-import microphone from "../assets/microphone.jpg"
-import rings from "../assets/rings.jpg"
-import shoes from "../assets/shoes.jpg"
-import watch from "../assets/watch.jpg"
-import perfum from "../assets/perfume.jpg"
-import dslr from "../assets/dslr.jpg"
+import React, { createContext, useReducer } from 'react';
+import { ProductReducer } from './productReducer';
+
 export const productContext = createContext();
 
-
 const ProductContextProvider = (props) => {
+  const [products] = useReducer(ProductReducer, [
+    {
+      id: 1,
+      name: 'Virsa',
+      price: 40,
+      image:
+        'https://www.libertybooks.com/image/cache/catalog/Ecom/shop%20by%20category/July1-184x229.jpg?q6',
+      productStatus: 'hot',
+    },
+    {
+      id: 2,
+      name: 'Ego Enemy',
+      price: 200,
+      image:
+        'https://www.libertybooks.com/image/cache/catalog/Shop%20by%20Category/9781781257029-640x996-184x229.jpg?q6',
+      productStatus: 'new',
+    },
+    {
+      id: 3,
+      name: 'Bible to Go',
+      price: 300,
+      image:
+        'https://www.libertybooks.com/image/cache/catalog/RP9780446580519-120x187.jpg?q6',
+      productStatus: 'new',
+    },
+    {
+      id: 4,
+      name: 'The Secret Weapon',
+      price: 150,
+      image:
+        'https://www.libertybooks.com/image/cache/catalog/9781406390582-120x187.jpg?q6',
+      productStatus: 'new',
+    },
+    {
+      id: 5,
+      name: 'Arsene Wenger',
+      price: 160,
+      image:
+        'https://www.libertybooks.com/image/cache/catalog/9781474618267-120x187.jpg?q6',
+      productStatus: 'hot',
+    },
+    {
+      id: 6,
+      name: 'The Lost Symbol',
+      price: 500,
+      image:
+        'https://www.libertybooks.com/image/cache/catalog/9780552161237-120x187.jpg?q6',
+      productStatus: 'new',
+    },
+    {
+      id: 7,
+      name: 'Vanashing tar',
+      price: 240,
+      image:
+        'https://www.libertybooks.com/image/cache/Adnan_khan/The-Vanishing-Stair-Paperback-120x187.jpg?q6',
+      productStatus: 'hot',
+    },
+    {
+      id: 8,
+      name: 'Brilliant',
+      price: 120,
+      image:
+        'https://www.libertybooks.com/image/cache/catalog/brilliant-9781447248774-120x187.jpg?q6',
+      productStatus: 'new',
+    },
+  ]);
 
-    const [products] = useReducer(ProductReducer, [
-        {id: 1, name: 'DSLR Camera', price: 40, image: dslr, productStatus: 'hot'},
-        {id: 2, name: 'Perfume', price: 200, image: perfum,productStatus: 'new'},
-        {id: 3, name: 'Watch', price: 300, image: watch,productStatus: 'new'},
-        {id: 4, name: 'Shoes', price: 150, image: shoes,productStatus: 'new'},
-        {id: 5, name: 'Microphone', price: 160, image: microphone,productStatus: 'hot'},
-        {id: 6, name: 'Headphones', price: 500, image: headphones,productStatus: 'new'},
-        {id: 7, name: 'Iphone X', price: 240, image: iphone,productStatus: 'hot'},
-        {id: 8, name: 'Rings', price: 120, image: rings,productStatus: 'new'},
-      ])
-      
-    return(
-        <productContext.Provider value={{products}}>
-           {props.children}
-        </productContext.Provider>
-    )
-
-}
+  return (
+    <productContext.Provider value={{ products }}>
+      {props.children}
+    </productContext.Provider>
+  );
+};
 
 export default ProductContextProvider;

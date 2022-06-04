@@ -12,12 +12,12 @@ body {
 
 nav {
   width: 100%;
-  background:#fff;
+  background: #fff;
   height: 70px;
   line-height: 70px;
   position: fixed;
-  top:0;
-  box-shadow: 0 1px 3px rgba(0,0,0,.1);
+  top: 0;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
   padding: 0 103px;
   display: flex;
   z-index: 9999;
@@ -95,7 +95,7 @@ nav ul li .shoppingCartTotal {
   position: absolute;
   top: 0;
   left: 0;
-  background:#00e676;
+  background: #00e676;
   padding: 7px 15px;
   color: #fff;
   font-size: 14px;
@@ -105,7 +105,7 @@ nav ul li .shoppingCartTotal {
   position: absolute;
   top: 0;
   left: 0;
-  background:#E65100;
+  background: #e65100;
   padding: 7px 15px;
   color: #fff;
   font-size: 14px;
@@ -119,7 +119,7 @@ nav ul li .shoppingCartTotal {
 }
 
 .productImage {
-  background:#fafafa;
+  background: #fafafa;
   width: 100%;
   min-height: 200px;
   text-align: center;
@@ -147,7 +147,7 @@ nav ul li .shoppingCartTotal {
 
 .proPrice {
   margin: 15px 0;
-  color:orangered;
+  color: orangered;
   font-size: 22px;
   font-weight: 30;
 }
@@ -162,12 +162,12 @@ nav ul li .shoppingCartTotal {
 }
 
 .proButton button {
-    background-color: transparent;
-    border: none;
-    color: #fff;
-    text-transform: uppercase;
-    outline: none;
-    cursor: pointer;
+  background-color: transparent;
+  border: none;
+  color: #fff;
+  text-transform: uppercase;
+  outline: none;
+  cursor: pointer;
 }
 
 /* Cart */
@@ -208,13 +208,13 @@ nav ul li .shoppingCartTotal {
   transform: translate(-50%, -50%);
   width: 35px;
   height: 35px;
-  background:#f57224;
+  background: #f57224;
   line-height: 35px;
   text-align: center;
   border-radius: 4px;
   color: #fff;
   visibility: hidden;
-  transition: all .5s;
+  transition: all 0.5s;
 }
 .cartProImage:hover .imageCount {
   visibility: visible;
@@ -276,7 +276,7 @@ nav ul li .shoppingCartTotal {
   text-align: center;
 }
 .deleteCartPro {
-  border:none;
+  border: none;
   display: inline-block;
   padding: 0 15px;
   color: rgb(247, 117, 117);
@@ -356,7 +356,7 @@ nav ul li .shoppingCartTotal {
 
 .checkoutbtn a {
   text-decoration: none;
-  border:none;
+  border: none;
   border-radius: 30px;
   padding: 8px 17px;
   background: rgb(248, 7, 120);
@@ -368,7 +368,7 @@ nav ul li .shoppingCartTotal {
 
 .deleteButton button {
   text-decoration: none;
-  border:none;
+  border: none;
   border-radius: 30px;
   padding: 8px 17px;
   background: rgb(246, 23, 60);
@@ -381,7 +381,7 @@ nav ul li .shoppingCartTotal {
 .search {
   width: 300px;
   padding: 12px 22px;
-  border:none;
+  border: none;
   outline: none;
   margin-left: 30px;
   border-radius: 30px;
@@ -395,7 +395,7 @@ nav ul li .shoppingCartTotal {
 header {
   width: 100%;
   height: 250px;
-  background: url("./assets/bbb.jpg");
+  background: url('https://www.libertybooks.com/image/cache/catalog/Ahmed%20Ecom/18-05-2022%20OBB%20Desktop%20Banner%202-1600x380.jpg?q6');
   background-size: cover;
   background-repeat: no-repeat;
   margin-top: 70px;
@@ -413,7 +413,7 @@ header .headerText {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, .5);
+  background: rgba(0, 0, 0, 0.5);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -424,9 +424,8 @@ header h1 {
   margin-bottom: 7px;
   font-size: 35px;
   text-transform: uppercase;
-  color:#ffff;
+  color: #ffff;
 }
-
 
 /* width */
 ::-webkit-scrollbar {
@@ -435,26 +434,26 @@ header h1 {
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: #f1f1f1; 
+  background: #f1f1f1;
 }
- 
+
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #ccc; 
+  background: #ccc;
   border-radius: 4px;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #ccc; 
+  background: #ccc;
 }
 
-@media(max-width: 765px){
-  .products{
+@media (max-width: 765px) {
+  .products {
     flex-wrap: wrap;
   }
   .product {
-   width: 100%;
+    width: 100%;
   }
   .headerText {
     padding: 0 100px;
@@ -475,7 +474,7 @@ header h1 {
   .cart {
     flex-direction: column;
   }
-  
+
   .cartProductName {
     width: 250px;
     padding: 14px 15px;
